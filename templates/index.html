@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rat — Portfolio</title>
+  <meta name="description" content="Rat — CSE student, CIO at CodeAarambh, React Native & Next.js developer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/htmx/2.0.3/htmx.min.js"></script>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="wrap">
+      <span class="nav-mark">rat<span style="color:var(--accent)">.</span>dev</span>
+      <ul class="nav-links">
+        <li><button hx-get="/partial/about" hx-target="#mount" hx-swap="innerHTML" onclick="setActive(this)">about</button></li>
+        <li><button hx-get="/partial/projects" hx-target="#mount" hx-swap="innerHTML" onclick="setActive(this)">projects</button></li>
+        <li><button hx-get="/partial/skills" hx-target="#mount" hx-swap="innerHTML" onclick="setActive(this)">skills</button></li>
+        <li><button hx-get="/partial/resume" hx-target="#mount" hx-swap="innerHTML" onclick="setActive(this)">resume</button></li>
+        <li><button hx-get="/partial/contact" hx-target="#mount" hx-swap="innerHTML" onclick="setActive(this)">contact</button></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <div class="hero-eyebrow"><span class="ping" aria-hidden="true"></span> available for opportunities</div>
+      <h1>Rat — building things that hold up under real users.</h1>
+      <p class="hero-role">B.Tech CSE student and CIO at CodeAarambh. I build mobile-first products with React Native and Next.js — from real-time collaboration platforms to tools live coaching institutes actually run on.</p>
+      <div class="hero-cta">
+        <button class="btn btn-primary" hx-get="/partial/projects" hx-target="#mount" hx-swap="innerHTML" onclick="scrollToMount(); setActiveByLabel('projects')">See the work</button>
+        <a class="btn" href="https://github.com/rat-sh" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div id="mount" data-swap-fade>
+      {% include "partials/about.html" %}
+    </div>
+  </main>
+
+  <footer class="wrap">
+    <div class="console">
+      <span class="prompt">rat@portfolio</span> ~ % whoami<br>
+      CIO @ CodeAarambh · React Native / Next.js · Narula Institute of Technology, class of 2027<span class="caret"></span>
+    </div>
+  </footer>
+
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

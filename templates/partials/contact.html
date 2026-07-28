@@ -1,0 +1,32 @@
+<section class="section" id="contact">
+  <span class="section-tag">05 — contact</span>
+  <h2>Get in touch</h2>
+  <p class="about-text" style="color:var(--ink-soft); max-width: 52ch; margin-bottom: var(--space-3);">
+    Open to mobile development roles and collaborations. The quickest way to reach me is the form below.
+  </p>
+
+  <form class="contact-form" id="contact-form"
+        hx-post="/contact/submit"
+        hx-target="#contact-form"
+        hx-swap="outerHTML">
+    <div>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <button class="btn btn-primary" type="submit" style="justify-self:start;">Send message</button>
+  </form>
+
+  <div class="social-row">
+    <a class="social-link" href="https://github.com/rat-sh" target="_blank" rel="noopener">GitHub ↗</a>
+    <a class="social-link" href="https://linkedin.com/in/rathi-ghosh" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <a class="social-link" href="https://medium.com/@cserathighosh" target="_blank" rel="noopener">Medium ↗</a>
+  </div>
+</section>

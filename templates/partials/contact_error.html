@@ -1,0 +1,10 @@
+<div class="form-status form-status-error" data-swap-fade>
+  {{ error }}
+</div>
+<script>
+  // Bring the form back after 2.5s so they can retry, instead of
+  // leaving them stuck on an error with no way to resubmit.
+  setTimeout(() => {
+    htmx.ajax('GET', '/partial/contact', { target: '#mount', swap: 'innerHTML' });
+  }, 2500);
+</script>

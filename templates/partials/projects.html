@@ -1,0 +1,112 @@
+<section class="section" id="projects">
+  <span class="section-tag">02 — projects</span>
+  <h2>Selected work</h2>
+
+  <div class="project-grid">
+
+    <article class="project">
+      <div class="project-head" role="button" tabindex="0" onclick="toggleProject(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleProject(this)}">
+        <h3>StudyRoom</h3>
+        <span class="project-status">flagship · <a class="live-badge" href="https://studyroom-1dwm.onrender.com/dashboard" target="_blank" rel="noopener" onclick="event.stopPropagation()">live ↗</a></span>
+      </div>
+      <p class="project-summary">A virtual co-studying platform built to hold real-time video, chat, and study tools in one place.</p>
+      <div class="project-detail" hidden>
+        <p>StudyRoom brings together WebRTC video calling, community chat, a shared-music bot ("Chip"), a game sandbox, and collaborative notes — the ambition is a single platform that covers what people currently split across Zoom, Discord, and separate study tools.</p>
+        <ul>
+          <li>Full product documentation: PRD, technical architecture, data models, and socket specs written before implementation</li>
+          <li>Real-time systems: WebRTC signaling, live chat, shared media state</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">WebRTC</span><span class="tag">Real-time</span><span class="tag">Product design</span>
+          <a class="tag tag-github" href="https://github.com/rat-sh/StudyRoom" target="_blank" rel="noopener" onclick="event.stopPropagation()">GitHub ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-head" role="button" tabindex="0" onclick="toggleProject(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleProject(this)}">
+        <h3>EduTrack</h3>
+        <span class="project-status"><a class="live-badge" href="https://xpert-asb6.onrender.com/" target="_blank" rel="noopener" onclick="event.stopPropagation()">live ↗</a> · ~1,000 users</span>
+      </div>
+      <p class="project-summary">Coaching-institute management app used by a real client, with AI-assisted test creation.</p>
+      <div class="project-detail" hidden>
+        <p>Built on Next.js and Supabase for a coaching institute client, EduTrack handles batches, exams, and results — including AI-generated question sets and PDF result reports. Currently gathering live feedback from teachers using it day to day and iterating on the payment and content-locking model.</p>
+        <ul>
+          <li>Next.js 16 App Router, React 19, Supabase auth</li>
+          <li>AI-powered exam generation, exam key/PIN access flow</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Next.js</span><span class="tag">Supabase</span><span class="tag">AI</span>
+          <a class="tag tag-github" href="https://github.com/rat-sh/xpert" target="_blank" rel="noopener" onclick="event.stopPropagation()">GitHub ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-head" role="button" tabindex="0" onclick="toggleProject(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleProject(this)}">
+        <h3>Packet Analyzer</h3>
+        <span class="project-status">security · under construction</span>
+      </div>
+      <p class="project-summary">A C++ deep packet inspection tool extended with live threat detection.</p>
+      <div class="project-detail" hidden>
+        <p>Forked and extended from an open-source DPI packet analyzer, with two original additions: a live threat and privacy blocker (tracker detection, plaintext HTTP flagging, TLS certificate validation, malicious domain matching) and an ARP spoofing detector for local network protection. Not yet published — no live demo or public repo link yet.</p>
+        <ul>
+          <li>C++, low-level networking, iptables-based blocking</li>
+          <li>Positioned as a systems/security counterpart to the mobile work above</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">C++</span><span class="tag">Networking</span><span class="tag">Security</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-head" role="button" tabindex="0" onclick="toggleProject(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleProject(this)}">
+        <h3>Angry Chess</h3>
+        <span class="project-status">original design</span>
+      </div>
+      <p class="project-summary">A chess variant designed from scratch — rules, systems, and lore.</p>
+      <div class="project-detail" hidden>
+        <p>An energy-based chess variant with its own mechanics: Supers and Ultimates fueled by an energy system, Awakened Pieces, a Usurper trap mechanic, player-level "outer deity" powers, and a full lore setting across two rival kingdoms.</p>
+        <ul>
+          <li>Complete original rule system designed solo</li>
+          <li>Demonstrates systems design and game balance thinking outside of software engineering</li>
+        </ul>
+        <div class="tag-row">
+          <span class="tag">Game design</span><span class="tag">Systems</span>
+          <a class="tag tag-github" href="https://github.com/rat-sh/Angry_Chess" target="_blank" rel="noopener" onclick="event.stopPropagation()">GitHub ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-head" role="button" tabindex="0" onclick="toggleProject(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleProject(this)}">
+        <h3>Medicire</h3>
+        <span class="project-status">mobile · health tech</span>
+      </div>
+      <p class="project-summary">A health platform, built as a mobile app.</p>
+      <div class="project-detail" hidden>
+        <p>No live demo yet since it's a mobile app — the repo is the best way to see where it stands.</p>
+        <div class="tag-row">
+          <span class="tag">Mobile</span><span class="tag">Health tech</span>
+          <a class="tag tag-github" href="https://github.com/rat-sh/Medicire" target="_blank" rel="noopener" onclick="event.stopPropagation()">GitHub ↗</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-head" role="button" tabindex="0" onclick="toggleProject(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleProject(this)}">
+        <h3>Loan Predictor</h3>
+        <span class="project-status">in development</span>
+      </div>
+      <p class="project-summary">A loan-approval prediction project.</p>
+      <div class="project-detail" hidden>
+        <p>Still in development — check the repo for current progress.</p>
+        <div class="tag-row">
+          <a class="tag tag-github" href="https://github.com/rat-sh/loan-predictor" target="_blank" rel="noopener" onclick="event.stopPropagation()">GitHub ↗</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>

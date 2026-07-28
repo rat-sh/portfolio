@@ -1,0 +1,20 @@
+<section class="section" id="resume">
+  <span class="section-tag">04 — resume</span>
+  <h2>Resume</h2>
+  <p class="project-summary" style="margin-bottom: var(--space-3);">
+    Preview it below, or grab the file directly.
+  </p>
+
+  <div class="resume-actions">
+    <a class="btn btn-primary" href="{{ url_for('static', filename='resume/rathi-ghosh-resume.pdf') }}" download>Download PDF</a>
+    <a class="btn" href="{{ url_for('static', filename='resume/rathi-ghosh-resume.pdf') }}" target="_blank" rel="noopener">Open in new tab ↗</a>
+  </div>
+
+  <div class="resume-preview">
+    <iframe
+      src="{{ url_for('static', filename='resume/rathi-ghosh-resume.pdf') }}"
+      title="Rathi Ghosh — Resume"
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
